@@ -3,11 +3,13 @@
 
 ## Introduction
 
-This repository contains the completed Disaster Response Pipeline Project, which implements a supervised training model to  classify input messages from a disaster to highlight what is happening and/or what type of response may be needed from first responders. The categories are .
+This repository contains the completed Disaster Response Pipeline Project, which implements a supervised training model to  classify input messages from a disaster to highlight what is happening and/or what type of response may be needed from first responders. 
 
 
-When runnning the app should look like...
+When runnning the app should look like..
 
+[app_img]:./app_image.png 
+![App_img][app_img]
 
 
 ## Training Data
@@ -61,6 +63,8 @@ To get the application up and running, we need to do the following three steps.
    Run the following command in the app's directory to run the web app.
     `python run.py`
 
-    Go to http://0.0.0.0:3001/
+    
+   TBD -- TBD -- TBD -- TBD -- TBD -- TBD -- TBD
+   !!!! Continuing to edit --Go to http://0.0.0.0:3001/
 
 
