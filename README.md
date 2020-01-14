@@ -1,27 +1,29 @@
 # Disaster Response Pipeline Project
 
+[//]: # (Image References)
+[app_img]:./app_img.png
 
 ## Introduction
 
-This repository contains the completed Disaster Response Pipeline Project, which implements a supervised training model to  classify input messages from a disaster to highlight what is happening and/or what type of response may be needed from first responders. 
+This repository contains the completed Disaster Response Pipeline Project, which implements a supervised training model to  classify messages incoming from a disaster area to highlight what is happening and/or what type of response may be needed from first responders. 
 
 
 When runnning the app should look like..
 
-[app_img]:./app_image.png 
-![App_img][app_img]
+ 
+![][app_img]
 
 
 ## Training Data
 
 The training data for the model is found in the two files:
 
- *  *disaster_messages.csv* 
- *  *disaster_categories.csv*
+ * *./data/disaster_messages.csv* 
+ * */data/disaster_categories.csv*
 
 Messages in the first file and categories in the second file correspond 
 through an id tag found in each. A message can correspond to more than one 
-category. For example, the following row in disaster_categories 
+category. For example, the following row in *disaster_categories.csv*
 
 ```
 73,related-1;request-1;offer-0;aid_related-1;medical_help-1;medical_products-0;
@@ -32,7 +34,7 @@ weather_related-1;floods-0;storm-1;fire-0;earthquake-0;cold-0;other_weather-0;di
 ```
 
 
-means messages corresponding that have *id* = 73 correspond to (classified by) the categories: *related*,*request*,*medical_help*,*other_aid*, *infrastructure_related*,*buildings*,*hospitals*, and *weather-related*.
+means messages corresponding that have **id** = 73 correspond to (classified by) the categories: **related**,**request**,**medical_help**,**other_aid**, **infrastructure_related**,**buildings**,**hospitals**, and **weather-related**.
 
 
 
