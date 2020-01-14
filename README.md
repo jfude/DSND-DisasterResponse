@@ -34,7 +34,7 @@ weather_related-1;floods-0;storm-1;fire-0;earthquake-0;cold-0;other_weather-0;di
 ```
 
 
-means messages corresponding that have **id** = 73 correspond to (classified by) the categories: **related**,**request**,**medical_help**,**other_aid**, **infrastructure_related**,**buildings**,**hospitals**, and **weather-related**.
+means messages that have **id** = 73 correspond to (classified by) the categories: **related**,**request**,**medical_help**,**other_aid**, **infrastructure_related**,**buildings**,**hospitals**, and **weather-related**.
 
 
 
