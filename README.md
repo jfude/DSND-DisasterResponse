@@ -34,7 +34,7 @@ weather_related-1;floods-0;storm-1;fire-0;earthquake-0;cold-0;other_weather-0;di
 ```
 
 
-means messages that have **id** = 73 correspond to (classified by) the categories: **related**,**request**,**medical_help**,**other_aid**, **infrastructure_related**,**buildings**,**hospitals**, and **weather-related**.
+means messages that have **id** = 73 correspond to (are classified in) the categories: **related**,**request**,**medical_help**,**other_aid**, **infrastructure_related**,**buildings**,**hospitals**, and **weather-related**.
 
 
 
@@ -59,14 +59,14 @@ To get the application up and running, we need to do the following three steps.
    ```shell
    python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl   
    ```
+   Part of the training set here is reserved for testing the model and the results will be output here.
+   
 
 3. Run the web application with the model running in the back end.
 
    Run the following command in the app's directory to run the web app.
     `python run.py`
 
-    
-   TBD -- TBD -- TBD -- TBD -- TBD -- TBD -- TBD
-   !!!! Continuing to edit --Go to http://0.0.0.0:3001/
+   Navigate your web browser to http://0.0.0.0:3001/.
 
 
