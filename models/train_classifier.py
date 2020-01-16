@@ -149,8 +149,8 @@ def evaluate_model(model, X_test, Y_test, category_names):
     for i in range(n_categories):
             print("\n\n")
             print("=================================================================")
-            print(category_names[i].upper() ,":  ",classification_report(Y_test[i], y_pred[i]))
-            print('Accuracy Score:','%','%.2f ' %  (100.0*accuracy_score(Y_test[i], y_pred[i])))
+            print(category_names[i].upper() ,":  ",classification_report(Y_test[:,i], y_pred[:,i]))
+            print('Accuracy Score:','%','%.2f ' %  (100.0*accuracy_score(Y_test[:,i], y_pred[:,i])))
             print("=================================================================")
         
     
