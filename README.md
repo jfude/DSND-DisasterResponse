@@ -2,15 +2,20 @@
 
 [//]: # (Image References)
 [app_img]:./app_img.png
+[app0_img]:./app0_img.png
+[app_img]:./test_result_img.png
+
 
 ## Introduction
 
 This repository contains the completed Disaster Response Pipeline Project, which implements a supervised training model to  classify messages incoming from a disaster area to highlight what is happening and/or what type of response may be needed from first responders. 
 
+When first launched the app should show a histogram of genres pulled from a database of messages used for training/testing the model.
 
-When runnning the app should look like..
+![][app0_img]
 
- 
+After a message is entered, the app will classify the message according to one or more of 36 possible disaster related categories such as *food*, *water*, *medical help*, etc...
+
 ![][app_img]
 
 
@@ -19,7 +24,7 @@ When runnning the app should look like..
 The training data for the model is found in the two files:
 
  * *./data/disaster_messages.csv* 
- * */data/disaster_categories.csv*
+ * *./data/disaster_categories.csv*
 
 Messages in the first file and categories in the second file correspond 
 through an id tag found in each. A message can correspond to more than one 
