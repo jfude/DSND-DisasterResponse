@@ -92,7 +92,9 @@ To get the application up and running, we need to do the following three steps.
 3. Run the web application with the model running in the back end.
 
    Run the following command in the app's directory to run the web app.
-    `python run.py`
+    ```shell
+    python run.py
+    ```
 
    Navigate your web browser to http://0.0.0.0:3001/ or http://127.0.0.1:3001 (or wherever you call home).
 
