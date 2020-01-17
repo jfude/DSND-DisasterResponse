@@ -69,10 +69,18 @@ To get the application up and running, we need to do the following three steps.
    
    
    The column **support** refers to the number of messages in the test. For the *STORM* category there are 498 messages
-   that are classified in this category (1.0) and 4746 messages that are not (0.0). **precision** is the ratio of true
-   positives (pred =1;test=1) to all positive (affirmative) predictions (pred = 1;test= 0,1), whereas **recall** 
-   is the ratio of true positives (pred =1;test=1) to all correct predictions  (pred = test). The **f1-score** 
-   is simply the harmonic mean of the precision and recall. 
+   that are classified in this category (1.0) and 4746 messages that are not (0.0). 
+   
+   **precision** is the ratio of true positives (pred =1;test=1) to all positive (affirmative) predictions (pred = 1;test=
+   0,1), whereas
+   
+   **recall** is the ratio of true positives (pred =1;test=1) to all correct predictions  (pred = test).
+   
+   The **f1-score** is simply the harmonic mean of the precision and recall, and the 
+   
+   **accuracy score** is the ratio of correct predictions to the number of messages in the test set (for the given
+   category). So for *EARTHQUAKE*, %98.89 of 5244 test messages were predicted correctly to either correspond to this
+   category or not. 
    
    We can expect that recall may be fairly low for a category where we have only a relatively small number of 
    in-category messages, because the numerator of the recall , number of true positives, will be small compared 
@@ -86,5 +94,5 @@ To get the application up and running, we need to do the following three steps.
    Run the following command in the app's directory to run the web app.
     `python run.py`
 
-   Navigate your web browser to http://0.0.0.0:3001/ or http://127.0.0.1:3001.
+   Navigate your web browser to http://0.0.0.0:3001/ or http://127.0.0.1:3001 (or wherever you call home).
 
