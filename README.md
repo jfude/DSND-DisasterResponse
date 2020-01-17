@@ -3,7 +3,7 @@
 [//]: # (Image References)
 [app_img]:./app_img.png
 [app0_img]:./app0_img.png
-[app_img]:./test_result_img.png
+[test_result_img]:./test_result_img.png
 
 
 ## Introduction
@@ -46,8 +46,6 @@ means messages that have **id** = 73 correspond to (are classified in) the categ
 ## Web Application Interface
 The interface to the model is a Web application accessed simply through a browser. The front end of the application is built using the [Bootstrap](https://getbootstrap.com/) library, and receives data from the model in the back end via the [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)) framework.   
 
-
-## Running the Application 
  
 To get the application up and running, we need to do the following three steps.
 
@@ -64,7 +62,23 @@ To get the application up and running, we need to do the following three steps.
    ```shell
    python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl   
    ```
-   Part of the training set here is reserved for testing the model and the results will be output here.
+   Part of the training set here is reserved for testing the model and the results will be output here. Test results
+   are shown for each of the 36 categories. 
+   
+   ![][test_result_img]
+   
+   
+   The column **support** refers to the number of messages in the test. For the *STORM* category there are 498 messages
+   that are classified in this category (1.0) and 4746 messages that are not (0.0). **precision** is the ratio of true
+   positives (pred =1;test=1) to all positive (affirmative) predictions (pred = 1;test= 0,1), whereas **recall** 
+   is the ratio of true positives (pred =1;test=1) to all correct predictions  (pred = test). The **f1-score** 
+   is simply the harmonic mean of the precision and recall. 
+   
+   We can expect that recall may be fairly low for a category where we have only a relatively small number of 
+   in-category messages, because the numerator of the recall , number of true positives, will be small compared 
+   to the number of false negatives (pred=0;test=0) in the denominator. This is demonstrated in the *FIRE* category in the
+   print out above.
+   
    
 
 3. Run the web application with the model running in the back end.
@@ -72,6 +86,5 @@ To get the application up and running, we need to do the following three steps.
    Run the following command in the app's directory to run the web app.
     `python run.py`
 
-   Navigate your web browser to http://0.0.0.0:3001/.
-
+   Navigate your web browser to http://0.0.0.0:3001/ or http://127.0.0.1:3001.
 
