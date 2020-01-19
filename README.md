@@ -1,8 +1,8 @@
 # Disaster Response Pipeline Project
 
 [//]: # (Image References)
-[app_img]:./app_img.png
 [app0_img]:./app0_img.png
+[app1_img]:./app1_img.png
 [test_result_img]:./test_result_img.png
 
 
@@ -16,7 +16,7 @@ When first launched the app should show a histogram of genres pulled from a data
 
 After a message is entered, the app will classify the message according to one or more of 36 possible disaster related categories such as *food*, *water*, *medical help*, etc...
 
-![][app_img]
+![][app1_img]
 
 
 ## Training Data
@@ -98,3 +98,6 @@ To get the application up and running, we need to do the following three steps.
 
    Navigate your web browser to http://0.0.0.0:3001/ or http://127.0.0.1:3001 (or wherever you call home).
 
+   Enter a text message and hit the "Classify Message" button. Referring to the image above, the graphic on the left
+   shows the categories that were found to be significant (colored cells) vs. those that were not. The graphic on the right
+   shows the probabilities for the significant categories. These are the probabilities that are input to a scoring function  	to determine significance (converts to 0 or 1) and are typically 60% or larger.  
